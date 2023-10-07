@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+  </head>
+
+  <body>
+    <header class="page-header">
+      <a class="page-header__logo logo" href="#">
+        <pictire></pictire>
+        <h2 class="logo__subtitle">Cat energy</h2>
+      </a>
+      <div class="menu">
+        <button class="menu__toggle menu__toggle--close menu__toggle--nojs" type="button">
+        </button>
+      </div>
+    </header>
+    <main class="form">
+      <h1 class="form__title">Подбор программы</h1>
+      <h2 class="form__subtitle">Заполните анкету, и мы подберем программу питания для вашего кота</h2>
+      <form class="form__block form-block">
+        <fieldset class="form-block__pet-info pet-info">
+           <label class="pet-info__title" for="cat-name">Имя:*</label>
+           <input class="pet-info__input" type="text" id="cat-name" name="cats-name" placeholder="Барсик">
+           <label class="pet-info__title" for="cat-weight">Вес (кг):*</label>
+           <input class="pet-info__input" type="text" id="cat-weight" name="cats-weight" placeholder="7">
+           <label class="pet-info__title" for="cat-age">Возраст (лет):</label>
+           <input class="pet-info__input" type="text" id="cat-age" name="cats-age" placeholder="7">
+        </fieldset>
+        <fieldset class="form-block__radio">
+           <ul class="radio__list radio-list">
+            <li class="radio-list__item radio">
+              <input type="radio__input" name="choose-target" value="choose-target-mark" id="loose-weight" checked>
+              <label class="radio__label radio-label" for="loose-weight">
+                <span class="radio-label__title">Похудение</span>
+              </label>
+            </li>
+            <li class="radio-list__item">
+              <input type="radio__input" name="choose-target" value="choose-target-mark" id="get-mass">
+              <label class="radio__label radio-label" for="get-mass">
+                <span class="radio-label__title">Набор массы</span>
+              </label>
+            </li>
+            <li class="radio-list__item">
+              <input type="radio__input" name="choose-target" value="choose-target-mark" id="need-advice">
+              <label class="radio__label radio-label" for="need-advice">
+                <span class="radio-label__title">Не знаю (Нужен ваш совет)</span>
+              </label>
+            </li>
+           </ul>
+        </fieldset>
+        <fieldset class="form-block__owner-info owner-info">
+          <h2 class="owner-info__title">Контактные данные (владельца кота)</h2>
+          <label class="owner-info__label" for="owner-mail">E-mail:*</label>
+          <input class="owner-info" type="email" id="owner-mail" name="owmers-mail" placeholder="kuklachev@gmail.com">
+          <svg></svg>
+          <label class="owner-info__label" for="owner-tel">Телефон:*</label>
+          <input class="owner-info" type="tel" id="owner-tel" name="owmers-tel" placeholder="8 (960) 900-60-90">
+          <svg></svg>
+        </fieldset>
+        <fieldset class="form-block__comments comments">
+          <h2 class="comments__title">Комментарий</h2>
+          <label class="comments" for="comment-field"></label>
+          <textarea class="" id="comment-field" name="comment-text" placeholder="Расскажите обо всех повАдках кота"></textarea>
+        </fieldset>
+        <fieldset class="form-block__checkbox checkbox">
+          <h2 class="checkbox__title">Дополнительно</h2>
+          <ul class="checkbox__list checkbox-list">
+            <li class="checkbox-list__item checkbox-item">
+              <input class="checkbox-item__input" type="checkbox" name="extra" id="sweetener" checked>
+              <label class="checkbox-item__label checkbox-label" for="sweetener">
+                <span class="checkbox-label__title">Cахарозаменитель</span>
+              </label>
+            </li>
+            <li class="checkbox-list__item checkbox-item">
+              <input class="checkbox-item__input" type="checkbox" name="extra" id="water" checked>
+              <label class="checkbox-item__label checkbox-label" for="water">
+                <span class="checkbox-label__title">Питьевая вода</span>
+              </label>
+            </li>
+            <li class="checkbox-list__item checkbox-item">
+              <input class="checkbox-item__input" type="checkbox" name="extra" id="milk" checked>
+              <label class="checkbox-item__label checkbox-label" for="milk">
+                <span class="checkbox-label__title">Молоко</span>
+              </label>
+            </li>
+            <li class="checkbox-list__item checkbox-item">
+              <input class="checkbox-item__input" type="checkbox" name="extra" id="vits" checked>
+              <label class="checkbox-item__label checkbox-label" for="vits">
+                <span class="checkbox-label__title">Витамины</span>
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <button class="form-block__button" type="button">Отправить заявку</button>
+        <p class="form-block__reminder">* — Обязательные поля</p>
+      </form>
+    </main>
+    <footer class="footer">
+      <div class="footer__map map">
+        <h2 class="map__title">приглашаем к сотрудничеству дилеров!</h2>
+        <span class="map__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</span>
+        <img class="map__image" src="" width="" height="" alt="карта расположения офиса">
+      </div>
+      <a class="footer__link link" href="#">
+        <svg></svg>
+      </a>
+      <section class="footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link" href="#">
+              <svg></svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#">
+              <svg></svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#">
+              <svg></svg>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <div class="footer__copyright copyright">
+        <a class="copyright__link" href="#">HTML Academy
+          <svg></svg>
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>
