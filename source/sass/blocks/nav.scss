@@ -3,4 +3,38 @@
   line-height: 20px;
   font-weight: 500;
   text-transform: uppercase;
+
+  @media (min-width: $tablet) {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop) {
+    font-size: 20px;
+  }
+}
+
+.nav__link {
+  text-decoration: none;
+  color: #000000;
+
+  // @media (min-width: $desktop) {
+  //   color: $backgound-white;
+  // }
+}
+
+.nav__list {
+  list-style-type: none;
+  display: none;
+
+  @media (min-width: $tablet) {
+   display: flex;
+   gap: 33px;
+   margin: 0;
+   width: 75%;
+  }
+
+  @media (min-width: $desktop) {
+    width: 50%;
+  }
 }

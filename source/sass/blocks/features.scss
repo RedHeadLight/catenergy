@@ -2,6 +2,17 @@
   font-size: 24px;
   line-height: 37px;
   font-weight: 400;
+
+  @media (min-width: $tablet) {
+    width: 164px;
+  }
+
+  @media (min-width: $desktop)  {
+    font-size: 36px;
+    line-height: 36px;
+    text-align: center;
+    width: 457px;
+  }
 }
 
 .features__link {
@@ -10,10 +21,73 @@
   font-weight: 400;
   text-transform: uppercase;
   text-decoration: none;
+  color: #000000;
+
+  @media (min-width: $tablet) {
+    font-size: 20px;
+  }
 }
 
 .features__text {
+  font-family: "Lato";
   font-size: 14px;
-  line-height: 14px;
+  line-height: 18px;
   font-weight: 400;
+
+  @media (min-width: $tablet) {
+    width: 340px;
+  }
+
+  @media (min-width: $desktop) {
+    font-size: 16px;
+    line-height: 20px;
+    width: 457px;
+  }
+}
+
+.features__list {
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0;
+
+  @media (min-width: $tablet) {
+    display: grid;
+    gap: 20px;
+  }
+
+  @media (min-width: $desktop) {
+    display: flex;
+    gap: 80px;
+    margin: 0 auto;
+  }
+}
+
+.features {
+  padding: 0 20px;
+}
+
+.features__item {
+  background-color: $basegrey;
+
+  @media (min-width: $tablet) {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  @media (min-width: $desktop) {
+    width: 570px;
+    flex-direction: row;
+  }
+}
+
+
+.features__wrapper {
+
+  @media (min-width: $tablet) {
+    display: grid;
+  }
+
+  @media (min-width: $desktop) {
+    display: block;
+  }
 }

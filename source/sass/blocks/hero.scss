@@ -4,19 +4,66 @@
   font-weight: 400;
   background-color: $basegreen;
   text-decoration: none;
-  font-family: "Oswald";
+  padding: 8px 44px;
+  width: 100%;
+  color: $backgound-white;
+  display: block;
+
+  @media (min-width: $tablet) {
+    position: absolute;
+    top: 43px;
+    left: 117px;
+    width: 192px;
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .hero__title {
   font-size: 14px;
   font-weight: 400;
   line-height: 14px;
-  font-family: "Oswald";
+  text-align: center;
+
+  @media (min-width: $tablet) {
+    font-size: 60px;
+    line-height: 60px;
+    width: 414px;
+    margin-left: 58px;
+  }
 }
 
 .hero__subtitile {
   font-size: 14px;
   font-weight: 400;
   line-height: 14px;
-  font-family: "Oswald";
+  text-align: center;
+
+  @media (min-width: $tablet) {
+    font-size: 20px;
+    line-height: 20px;
+    margin: 41px 0 0 58px;
+  }
+}
+
+.hero {
+  margin: 0 auto;
+  padding: 0 20px;
+
+  @media (min-width: $desktop) {
+    display: flex;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      top: 0;
+      background-image: url("../img/background-image-desktop.jpg");
+      height: 100%;
+      width: 50%;
+      z-index: -1;
+      background-size: cover;
+    }
+  }
 }

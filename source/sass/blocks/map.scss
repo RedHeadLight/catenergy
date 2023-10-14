@@ -7,8 +7,29 @@
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+  font-weight: 400;
+
+  @media (min-width: $tablet) {
+    font-size: 20px;
+    line-height: 26px;
+    width: 172px;
+  }
 }
 
 .map__address {
+  font-family: "Lato";
   font-size: 16px;
+
+  @media (min-width: $tablet) {
+    width: 160px;
+  }
+}
+
+.map__wrapper {
+  display: flex;
+  padding: 26px 20px;
+
+  @media (min-width: $tablet) {
+    gap: 296px;
+  }
 }

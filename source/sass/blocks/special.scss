@@ -1,16 +1,44 @@
-.spesial {
+.special {
   font-family: "Oswald";
   font-weight: 400;
+  padding: 20px 20px 20px 49px;
 }
 
-.spesial__title {
-  font-size: 36px;
-  line-height: 40px;
-  color: #000;
-}
-
-.spesial__text {
-  color: #444444;
+.special__text {
+  color: $dark-grey;
   font-size: 14px;
   line-height: 18px;
+
+  @media (min-width: $desktop) {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+.special__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: $tablet) {
+    display: grid;
+    grid-template-columns: 230px 230px;
+    gap: 153px;
+  }
+
+  @media (min-width: $desktop) {
+    display: flex;
+  }
+}
+
+.special__item {
+  display: flex;
+
+  @media (min-width: $desktop) {
+    display: grid;
+  }
+}
+
+.special__icon {
+  background-color: $basegreen;
 }

@@ -1,0 +1,10 @@
+.menu__toggle {
+  color: #000000;
+  width: 24px;
+  height: 16px;
+  border: none;
+
+  @media (min-width: $tablet) {
+    display: none;
+  }
+}
